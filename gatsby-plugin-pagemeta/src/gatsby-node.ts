@@ -14,6 +14,11 @@ export const onCreatePage: GatsbyNode['onCreatePage'] = async (
   },
   pluginOptionsInput,
 ) => {
+  if (page.path.includes('node_modules')) {
+    // Ignore third parties
+    return;
+  }
+
   const pluginOptions = requirePluginOptions(pluginOptionsInput);
   const { prefix, fieldName } = pluginOptions;
 
@@ -29,7 +34,7 @@ export const onCreatePage: GatsbyNode['onCreatePage'] = async (
         ...Array.from(properties.entries()).reduce((acc, [key, val]) => {
           return { ...acc, [key]: val };
         }, {}),
-      }
-    }
+      },
+    },
   });
 };
