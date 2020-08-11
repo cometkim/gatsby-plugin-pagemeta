@@ -1,12 +1,13 @@
 {
   "name": "gatsby-plugin-pagemeta",
-  "description": "",
+  "description": "A GatsbyJS plugin to use comments as page metadata",
+  "version": "1.0.0",
+  "license": "MIT",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
     "typescript"
   ],
-  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/cometkim/gatsby-plugin-pagemeta.git",
@@ -23,6 +24,17 @@
     "tsc": "tsc --noEmit",
     "test": "jest"
   },
+  "files": [
+    "src",
+    "index.js",
+    "gatsby-node.js",
+    "utils.js",
+    "lib.js",
+    "types.js",
+    "*.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
   "peerDependencies": {
     "gatsby": ">= 2.0.0"
   },

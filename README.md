@@ -1,6 +1,6 @@
 # gatsby-plugin-pagemeta
 
-Plugin to allows to use comments as page metadata.
+A GatsbyJS plugin to use comments as page metadata.
 
 ## Usage
 
