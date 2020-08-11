@@ -14,7 +14,7 @@ export const onCreatePage: GatsbyNode['onCreatePage'] = async (
   },
   pluginOptionsInput,
 ) => {
-  if (page.path.includes('node_modules')) {
+  if (page.component.includes('node_modules')) {
     // Ignore third parties
     return;
   }
@@ -22,7 +22,7 @@ export const onCreatePage: GatsbyNode['onCreatePage'] = async (
   const pluginOptions = requirePluginOptions(pluginOptionsInput);
   const { prefix, fieldName } = pluginOptions;
 
-  const content = await readFile(page.path, 'utf-8');
+  const content = await readFile(page.component, 'utf-8');
   const properties = extractProperties(prefix, content);
 
   deletePage(page);

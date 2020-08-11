@@ -10,7 +10,7 @@ test('the onCreatePage hook dispatch createPage action', async () => {
   const deletePage = jest.fn() as DeletePageFn;
 
   const page = {
-    path: require.resolve('../__fixture__/fixture-1.js'),
+    component: require.resolve('../__fixture__/fixture-1.js'),
   };
 
   await onCreatePage({
@@ -39,7 +39,7 @@ test('the onCreatePage hook dispatch deletePage action', async () => {
   const deletePage = jest.fn() as DeletePageFn;
 
   const page = {
-    path: require.resolve('../__fixture__/fixture-1.js'),
+    component: require.resolve('../__fixture__/fixture-1.js'),
   };
 
   await onCreatePage({
