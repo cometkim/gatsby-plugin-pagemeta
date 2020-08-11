@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-pagemeta",
   "description": "A GatsbyJS plugin to use comments as page metadata",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "keywords": [
     "gatsby",
