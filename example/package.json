@@ -1,0 +1,15 @@
+{
+  "name": "@gatsby-plugin-pagemeta/example",
+  "dependencies": {
+    "gatsby": "^2.24.42",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-typescript": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "typescript": "^3.9.7"
+  }
+}

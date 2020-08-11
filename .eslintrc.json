@@ -1,0 +1,13 @@
+{
+  "parserOptions": {
+    "project": [
+      "tsconfig.json"
+    ]
+  },
+  "plugins": [
+    "@cometjs"
+  ],
+  "extends": [
+    "plugin:@cometjs/auto"
+  ]
+}
